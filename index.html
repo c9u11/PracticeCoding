@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Practice Coding</title>
+
+    <script src="./section1/01MinimumOfThreeNumbers.js"></script>
+    <script src="./section1/02IsCanMakeTriangle.js"></script>
+    <style>
+      table, tr {
+        width: 100%;
+      }
+      th, td {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="text-align: center;">
+      <tr>
+        <th>
+          제목
+        </th>
+        <th>
+          Input
+        </th>
+        <th>
+          Output
+        </th>
+      </tr>
+      <tr>
+        <td>세 수 중 최솟값</td>
+        <td><input type="textbox" onchange="MinimumOfThreeNumbers(this.value, returnEl('MinimumOfThreeNumbers'))"></td>
+        <td id="MinimumOfThreeNumbers"></td>
+      </tr>
+      <tr>
+        <td>삼각형 판별하기</td>
+        <td><input type="textbox" onchange="IsCanMakeTriangle(this.value, returnEl('IsCanMakeTriangle'))"></td>
+        <td id="IsCanMakeTriangle"></td>
+      </tr>
+    </table>
+
+    <script>
+      function returnEl(id){
+        return document.getElementById(id)
+      }
+    </script>
+  </body>
+</html>
