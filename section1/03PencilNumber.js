@@ -1,6 +1,5 @@
 function PencilNumber(input, el){
   var output = null;
-  var inputArray = input.split(" ");
   
   // 숫자 검사
   if(isNaN(input) || input*1 > 1000){
