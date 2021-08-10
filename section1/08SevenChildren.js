@@ -22,10 +22,15 @@ function SevenChildren(input, el){
     if(sum-100 <= inputArray[i]*1) continue;
     for (j=i+1;j<inputArray.length;j++){
       if(i==j) continue;
-      if(sum-100 !== inputArray[i]*1 + inputArray[j]*1) continue;
-      inputArray.splice(j,1);
-      inputArray.splice(i,1);
-      break;
+      if(sum-100 === inputArray[i]*1 + inputArray[j]*1) {
+        inputArray.splice(j,1);
+        inputArray.splice(i,1);
+        break;
+      }
+      if(i === inputArray.length-2 && j===inputArray.length-1){
+        el.innerText = "Check Input";
+        return
+      }
     }
   }
 
