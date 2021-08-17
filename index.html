@@ -13,6 +13,7 @@
     <script src="./section1/07TenDayRotationSystem.js"></script>
     <script src="./section1/08SevenChildren.js"></script>
     <script src="./section1/09AtoPoundkey.js"></script>
+    <script src="./section1/10FindChar.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -79,6 +80,11 @@
         <td>A를 #으로</td>
         <td><input type="textbox" onchange="AtoPoundkey(this.value, returnEl('AtoPoundkey'))"></td>
         <td id="AtoPoundkey"></td>
+      </tr>
+      <tr>
+        <td>문자 찾기</td>
+        <td><textarea cols="17" rows="2" onchange="FindChar(this.value, returnEl('FindChar'))"></textarea></td>
+        <td id="FindChar"></td>
       </tr>
     </table>
 
