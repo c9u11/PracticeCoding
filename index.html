@@ -15,6 +15,7 @@
     <script src="./section1/09AtoPoundkey.js"></script>
     <script src="./section1/10FindChar.js"></script>
     <script src="./section1/11FindUpperCase.js"></script>
+    <script src="./section1/12UpperCase.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -91,6 +92,11 @@
         <td>대문자 찾기</td>
         <td><input type="textbox" onchange="FindUpperCase(this.value, returnEl('FindUpperCase'))"></td>
         <td id="FindUpperCase"></td>
+      </tr>
+      <tr>
+        <td>대문자로 통일</td>
+        <td><input type="textbox" onchange="UpperCase(this.value, returnEl('UpperCase'))"></td>
+        <td id="UpperCase"></td>
       </tr>
     </table>
 
