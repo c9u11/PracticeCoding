@@ -17,6 +17,7 @@
     <script src="./section1/11FindUpperCase.js"></script>
     <script src="./section1/12UpperCase.js"></script>
     <script src="./section1/13ReverseUpperCase.js"></script>
+    <script src="./section1/14LongestString.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -103,6 +104,11 @@
         <td>대소문자 변환</td>
         <td><input type="textbox" onchange="ReverseUpperCase(this.value, returnEl('ReverseUpperCase'))"></td>
         <td id="ReverseUpperCase"></td>
+      </tr>
+      <tr>
+        <td>가장 긴 문자열</td>
+        <td><textarea cols="17" rows="3" onchange="LongestString(this.value, returnEl('LongestString'))"></textarea></td>
+        <td id="LongestString"></td>
       </tr>
     </table>
 
