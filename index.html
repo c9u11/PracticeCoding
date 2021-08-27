@@ -20,6 +20,7 @@
     <script src="./section1/14LongestString.js"></script>
     <script src="./section1/15CenterString.js"></script>
     <script src="./section1/16RemoveDuplicateChar.js"></script>
+    <script src="./section1/17RemoveDuplicateWord.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -121,6 +122,11 @@
         <td>중복문자제거</td>
         <td><input type="textbox" onchange="RemoveDuplicateChar(this.value, returnEl('RemoveDuplicateChar'))"></td>
         <td id="RemoveDuplicateChar"></td>
+      </tr>
+      <tr>
+        <td>중복단어제거</td>
+        <td><textarea cols="17" rows="3" onchange="RemoveDuplicateWord(this.value, returnEl('RemoveDuplicateWord'))"></textarea></td>
+        <td id="RemoveDuplicateWord"></td>
       </tr>
     </table>
 
