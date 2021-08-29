@@ -1,14 +1,17 @@
 function BiggerNumber(input, el){
   var output = "";
   var inputArray = input.split('\n');
-  
-  inputArray.forEach(value => {
+  var numList = inputArray[1].split(" ");
+  if(isNaN(inputArray[0])){
+    el.innerText = "Check Input";
+    return
+  }
+  numList.forEach(value => {
     if(isNaN(value)){
       el.innerText = "Check Input";
       return
     }
   });
-  var numList = inputArray[1].split(" ");
   numList.forEach((value,idx)=>{
     if(idx === 0){
       output += value + " ";
