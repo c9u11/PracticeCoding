@@ -6,6 +6,7 @@
 
     <script src="./01BiggerNumber.js"></script>
     <script src="./02VisibleStudent.js"></script>
+    <script src="./03RPS.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -37,6 +38,11 @@
         <td>보이는 학생</td>
         <td><textarea cols="17" rows="3" onchange="VisibleStudent(this.value, returnEl('VisibleStudent'))"></textarea></td>
         <td id="VisibleStudent"></td>
+      </tr>
+      <tr>
+        <td>가위 바위 보</td>
+        <td><textarea cols="17" rows="3" onchange="RPS(this.value, returnEl('RPS'))"></textarea></td>
+        <td id="RPS"></td>
       </tr>
       <!-- <tr>
         <td>세 수 중 최솟값</td>
