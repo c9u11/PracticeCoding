@@ -7,6 +7,7 @@
     <script src="./01BiggerNumber.js"></script>
     <script src="./02VisibleStudent.js"></script>
     <script src="./03RPS.js"></script>
+    <script src="./04Score.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -43,6 +44,11 @@
         <td>가위 바위 보</td>
         <td><textarea cols="17" rows="3" onchange="RPS(this.value, returnEl('RPS'))"></textarea></td>
         <td id="RPS"></td>
+      </tr>
+      <tr>
+        <td>점수 계산</td>
+        <td><textarea cols="17" rows="3" onchange="Score(this.value, returnEl('Score'))"></textarea></td>
+        <td id="Score"></td>
       </tr>
       <!-- <tr>
         <td>세 수 중 최솟값</td>
