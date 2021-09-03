@@ -9,6 +9,7 @@
     <script src="./03RPS.js"></script>
     <script src="./04Score.js"></script>
     <script src="./05GetLank.js"></script>
+    <script src="./06GridMaxSum.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -55,6 +56,11 @@
         <td>등수 구하기</td>
         <td><textarea cols="17" rows="3" onchange="GetLank(this.value, returnEl('GetLank'))"></textarea></td>
         <td id="GetLank"></td>
+      </tr>
+      <tr>
+        <td>격자판 최대합</td>
+        <td><textarea cols="17" rows="3" onchange="GridMaxSum(this.value, returnEl('GridMaxSum'))"></textarea></td>
+        <td id="GridMaxSum"></td>
       </tr>
       <!-- <tr>
         <td>세 수 중 최솟값</td>
