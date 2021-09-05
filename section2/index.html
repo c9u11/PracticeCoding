@@ -10,6 +10,7 @@
     <script src="./04Score.js"></script>
     <script src="./05GetLank.js"></script>
     <script src="./06GridMaxSum.js"></script>
+    <script src="./07Peak.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -61,6 +62,11 @@
         <td>격자판 최대합</td>
         <td><textarea cols="17" rows="3" onchange="GridMaxSum(this.value, returnEl('GridMaxSum'))"></textarea></td>
         <td id="GridMaxSum"></td>
+      </tr>
+      <tr>
+        <td>봉우리</td>
+        <td><textarea cols="17" rows="3" onchange="Peak(this.value, returnEl('Peak'))"></textarea></td>
+        <td id="Peak"></td>
       </tr>
       <!-- <tr>
         <td>세 수 중 최솟값</td>
