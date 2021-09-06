@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Practice Coding</title>
+
+    <script src="./01Palindrome.js"></script>
+    <style>
+      table, tr {
+        width: 100%;
+      }
+      th, td {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="text-align: center;">
+      <tr>
+        <th>
+          제목
+        </th>
+        <th>
+          Input
+        </th>
+        <th>
+          Output
+        </th>
+      </tr>
+      <tr>
+        <td>큰 수 출력하기</td>
+        <td><textarea cols="17" rows="3" onchange="Palindrome(this.value, returnEl('Palindrome'))"></textarea></td>
+        <td id="Palindrome"></td>
+      </tr>
+      <!-- <tr>
+        <td>세 수 중 최솟값</td>
+        <td><input type="textbox" onchange="BiggerNumber(this.value, returnEl('BiggerNumber'))"></td>
+        <td id="BiggerNumber"></td>
+      </tr> -->
+    </table>
+
+    <script>
+      function returnEl(id){
+        return document.getElementById(id)
+      }
+    </script>
+  </body>
+</html>
