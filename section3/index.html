@@ -5,6 +5,7 @@
     <title>Practice Coding</title>
 
     <script src="./01Palindrome.js"></script>
+    <script src="./02Palindrome2.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -28,9 +29,14 @@
         </th>
       </tr>
       <tr>
-        <td>큰 수 출력하기</td>
+        <td>회문 문자열</td>
         <td><textarea cols="17" rows="3" onchange="Palindrome(this.value, returnEl('Palindrome'))"></textarea></td>
         <td id="Palindrome"></td>
+      </tr>
+      <tr>
+        <td>유효한 팰린드롬</td>
+        <td><textarea cols="17" rows="3" onchange="Palindrome2(this.value, returnEl('Palindrome2'))"></textarea></td>
+        <td id="Palindrome2"></td>
       </tr>
       <!-- <tr>
         <td>세 수 중 최솟값</td>
