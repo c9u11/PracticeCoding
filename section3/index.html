@@ -6,6 +6,7 @@
 
     <script src="./01Palindrome.js"></script>
     <script src="./02Palindrome2.js"></script>
+    <script src="./03ReturnNumber.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -38,11 +39,11 @@
         <td><textarea cols="17" rows="3" onchange="Palindrome2(this.value, returnEl('Palindrome2'))"></textarea></td>
         <td id="Palindrome2"></td>
       </tr>
-      <!-- <tr>
-        <td>세 수 중 최솟값</td>
-        <td><input type="textbox" onchange="BiggerNumber(this.value, returnEl('BiggerNumber'))"></td>
-        <td id="BiggerNumber"></td>
-      </tr> -->
+      <tr>
+        <td>숫자만 추출</td>
+        <td><input type="textbox" onchange="ReturnNumber(this.value, returnEl('ReturnNumber'))"></td>
+        <td id="ReturnNumber"></td>
+      </tr>
     </table>
 
     <script>
