@@ -7,6 +7,7 @@
     <script src="./01Palindrome.js"></script>
     <script src="./02Palindrome2.js"></script>
     <script src="./03ReturnNumber.js"></script>
+    <script src="./04DistanceFromChar.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -43,6 +44,11 @@
         <td>숫자만 추출</td>
         <td><input type="textbox" onchange="ReturnNumber(this.value, returnEl('ReturnNumber'))"></td>
         <td id="ReturnNumber"></td>
+      </tr>
+      <tr>
+        <td>가장 짧은 문자거리</td>
+        <td><input type="textbox" onchange="DistanceFromChar(this.value, returnEl('DistanceFromChar'))"></td>
+        <td id="DistanceFromChar"></td>
       </tr>
     </table>
 
