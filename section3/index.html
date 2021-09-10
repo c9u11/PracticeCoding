@@ -8,6 +8,7 @@
     <script src="./02Palindrome2.js"></script>
     <script src="./03ReturnNumber.js"></script>
     <script src="./04DistanceFromChar.js"></script>
+    <script src="./05CompressString.js"></script>
     <style>
       table, tr {
         width: 100%;
@@ -49,6 +50,11 @@
         <td>가장 짧은 문자거리</td>
         <td><input type="textbox" onchange="DistanceFromChar(this.value, returnEl('DistanceFromChar'))"></td>
         <td id="DistanceFromChar"></td>
+      </tr>
+      <tr>
+        <td>문자열 압축</td>
+        <td><input type="textbox" onchange="CompressString(this.value, returnEl('CompressString'))"></td>
+        <td id="CompressString"></td>
       </tr>
     </table>
 
