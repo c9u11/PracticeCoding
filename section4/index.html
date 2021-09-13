@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Practice Coding</title>
+
+    <script src="./01SumDigit.js"></script>
+    <style>
+      table, tr {
+        width: 100%;
+      }
+      th, td {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="text-align: center;">
+      <tr>
+        <th>
+          제목
+        </th>
+        <th>
+          Input
+        </th>
+        <th>
+          Output
+        </th>
+      </tr>
+      <tr>
+        <td>자릿수의 합</td>
+        <td><textarea cols="17" rows="3" onchange="SumDigit(this.value, returnEl('SumDigit'))"></textarea></td>
+        <td id="SumDigit"></td>
+      </tr>
+    </table>
+
+    <script>
+      function returnEl(id){
+        return document.getElementById(id)
+      }
+    </script>
+  </body>
+</html>
