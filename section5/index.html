@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Practice Coding</title>
+
+    <script src="./01CombiningTwoArray.js"></script>
+    <style>
+      table, tr {
+        width: 100%;
+      }
+      th, td {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="text-align: center;">
+      <tr>
+        <th>
+          제목
+        </th>
+        <th>
+          Input
+        </th>
+        <th>
+          Output
+        </th>
+      </tr>
+      <tr>
+        <td>두 배열 합치기</td>
+        <td><textarea cols="17" rows="3" onchange="CombiningTwoArray(this.value, returnEl('CombiningTwoArray'))"></textarea></td>
+        <td id="CombiningTwoArray"></td>
+      </tr>
+    </table>
+
+    <script>
+      function returnEl(id){
+        return document.getElementById(id)
+      }
+    </script>
+  </body>
+</html>
